@@ -22,17 +22,19 @@ const Footer = () => {
                 Explore
               </h4>
               <ul className="space-y-2">
-                {["Residences", "Amenities", "Gallery", "Location"].map((item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="font-montserrat font-light text-white-gold-muted text-sm 
+                {["Residences", "Amenities", "Gallery", "Location"].map(
+                  (item) => (
+                    <li key={item}>
+                      <a
+                        href="#"
+                        className="font-montserrat font-light text-white-gold-muted text-sm 
                                hover:text-white-gold transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ),
+                )}
               </ul>
             </div>
             <div>
@@ -82,6 +84,14 @@ const Footer = () => {
           </p>
           <p className="font-montserrat font-light text-white-gold/40 text-xs">
             Developed by Zenith Properties LLC
+          </p>
+        </div>
+
+        {/* Portfolio Disclaimer */}
+        <div className="pt-6 text-center">
+          <p className="font-montserrat font-light text-white-gold/30 text-xs">
+            ⚠️ This is a demo/sample website for portfolio purposes only. "The
+            Zenith" does not represent an actual brand or product.
           </p>
         </div>
       </div>
