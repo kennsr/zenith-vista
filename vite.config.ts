@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "development" ? "/zenith-vista/" : "/",
+  base: "/zenith-vista/",
   server: {
     host: "::",
     port: 8080,

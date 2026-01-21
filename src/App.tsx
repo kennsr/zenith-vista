@@ -8,8 +8,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Use /zenith-vista basename in development, empty in production
-const basename = import.meta.env.DEV ? "/zenith-vista" : "";
+// Use /zenith-vista basename for all environments
+const basename = "/zenith-vista";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
